@@ -25,46 +25,46 @@ Note: These instructions were made for Windows 10. Exact steps may vary by platf
    - These should show the SDK versions for both flutter and dart. Ask for help if you did not get this result.
 
 ## Installing Android Studio
-- Go to https://developer.android.com/studio for instructions
+- Go to https://developer.android.com/studio and follow the install instructions.
 
 
 ## Creating a new project
-- launch Android Stuido
-- select "Create New Flutter project"
-- select "Flutter application"
-- Choose an empty folder to use for your project (just like for IntelliJ)
-- Name it whatever you want, but make sure the package name follows the `com.example.yourprojectname` format.
-  - This is typically related to the project's website. Since we don't have one, we can leave it as example.
-- You should now have a new Flutter project!
+1. launch Android Stuido
+2. select "Create New Flutter project"
+3. select "Flutter application"
+4. Choose an empty folder to use for your project (just like for IntelliJ)
+5. Name it whatever you want, but make sure the package name follows the `com.example.yourprojectname` format.
+   - This is typically related to the project's website. Since we don't have one, we can leave it as example.
+6. You should now have a new Flutter project!
 
 ## Adding Flutter & Dart Plugins
 - IMPORTANT: Flutter will not be able to build without adding these plugins to Android Stuido
-- In Android Studio, navigate to File -> Settings -> Plugins
-- Look up and install the official plugins for Flutter and Dart, respectively (should be the only ones that appear)
+1. In Android Studio, navigate to File -> Settings -> Plugins
+2. Look up and install the official plugins for Flutter and Dart, respectively (should be the only ones that appear)
 
 ## Running our project
-- Open the project folder in your terminal of choice (Android Studio has one built in)
-- run `flutter doctor`. This will reveal steps we need to follow before we can run the project.
-- Android licenses must be signed before you can run your Android app. To sign them run: `flutter doctor --android-licenses`, then enter `y` for each license.
-- Other potential issues:
-  - `Android Studio [not installed]`
-    - Flutter does now know the correct path to your Android Stuido install.
-    - This may be set manually with `flutter config --android-studio-dir="C:\Program Files\Android\Android Studio"`
-  - `No connected devices`/`No devices available`
-    - In Android Studio, navigate to File -> Project Structure -> Project -> Project SDK
-    - If already have an Android SDK, choose that. (I have Android API 30, for example)
-    - If none are listed, follow these steps:
-      - In Android Studio, navigate to Tools -> SDK manager, and select one of the available platforms.
-      - Note: Higher API levels mean more features, but less compatibility with Android devices.
-- Select an Android device from the dropdown in the top right
-  - If you have an Android phone, you may simply connect it to your computer. Android Studio will automatically detect it.
-  - Otherwise, you may download an Android emulator
-    - In Android Studio, navigate to Tools -> AVD Manager -> Create Virtual Device...
-    - Select an Android phone from the list (i.e. Pixel 3).
-    - Download the most recent image and select Next
-    - Click finish.
-    - **Note that Android emulators are resourse expensive, and may be slow on some computers.**
-- Click run!
+1. Open the project folder in your terminal of choice (Android Studio has one built in)
+2. run `flutter doctor`. This will reveal steps we need to follow before we can run the project.
+3. Android licenses must be signed before you can run your Android app. To sign them run: `flutter doctor --android-licenses`, then enter `y` for each license.
+4. Other potential issues:
+   - `Android Studio [not installed]`
+     - Flutter does now know the correct path to your Android Stuido install.
+     - This may be set manually with `flutter config --android-studio-dir="C:\Program Files\Android\Android Studio"`
+   - `No connected devices`/`No devices available`
+     - In Android Studio, navigate to File -> Project Structure -> Project -> Project SDK
+     - If already have an Android SDK, choose that. (I have Android API 30, for example)
+     - If none are listed, follow these steps:
+       - In Android Studio, navigate to Tools -> SDK manager, and select one of the available platforms.
+       - Note: Higher API levels mean more features, but less compatibility with Android devices.
+5. Select an Android device from the dropdown in the top right
+   - If you have an Android phone, you may simply connect it to your computer. Android Studio will automatically detect it.
+   - Otherwise, you may download an Android emulator
+     - In Android Studio, navigate to Tools -> AVD Manager -> Create Virtual Device...
+     - Select an Android phone from the list (i.e. Pixel 3).
+     - Download the most recent image and select Next
+     - Click finish.
+     - **Note that Android emulators are resourse expensive, and may be slow on some computers.**
+6. Click run!
 
 ## Flutter Lab
 - When you created your Flutter project, a README.md was generated. Open it up and follow the instructions for "Lab: Write your first Flutter app".
